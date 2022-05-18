@@ -1,0 +1,65 @@
+<div class="my-container">
+  <div class="header">
+    
+    <div class="function">
+      <div class="upload"><i class="fa-solid fa-plus"></i></div>
+      <div class="settings"><i class="fa-solid fa-ellipsis-v"></i></div>
+    </div>
+    <div class="info-group">
+      <div class="name">CERIOUS PANG</div>
+   
+  
+    
+    
+  </div>
+  <div class="content">
+    <div class="main-cont">
+      <div class="main-info">
+        <div class="follow-group">
+          <div class="follow-item following">
+            1,073
+          </div>
+          <div class="follow-item follower">
+           30
+          </div>
+          <div class="follow-item postNumber">
+            4
+           </div>
+        </div>
+        <div class="des-group">
+          <div class="des-item following">
+            Following
+          </div>
+          <div class="des-item follower">
+           Followers
+          </div>
+          <div class="des-item postNumber">
+            Posts
+           </div>
+        </div>
+       
+      </div>
+      <div class="intro">
+        我是一個很奇耙的人分享的東西都很奇耙...更多
+      </div>
+      <div class="cont-pic"></div>
+       
+      <swiper
+        [pagination]="true"
+      >
+        <ng-template
+          *ngFor="let i of [1,2]"
+          swiperSlide
+        >
+          <div class="posts g-1 row">
+            <div *ngFor="let i of [0,1,2,3]" class="post col-6">
+              <app-share-share-post
+                [coverImg]="'assets/images/post'+i%4+'.png'"
+              ></app-share-share-post>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+</div>
