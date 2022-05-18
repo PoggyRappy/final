@@ -1,0 +1,151 @@
+@import "~swiper/swiper-bundle.css";
+
+.my-container
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: calc(8vh - 1px);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.header
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.function
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+ 
+ 
+}
+.settings{
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 12px 16px;
+}
+.upload{
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 12px 17px;
+}
+.name
+{
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 0 40px;
+  margin-top: -33px;
+}
+
+.content
+{
+  flex: 1;
+  width: 100%;
+  margin-top: 80px;
+  position:fixed;
+}
+
+.main-info
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 0;
+  position: relative;
+  left: max(115px, 20vmin);
+}
+
+.follow-group
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.follow-item
+{
+  color: #0098BE;
+  margin: 0 12px 0 30px;
+  padding: 5px 12px;
+  font-size: 3.8vmin;
+}
+.des-group
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.des-item
+{
+  color: #739FAA;
+  margin: 0 4px 0 39px;
+  padding: 0px 2px;
+  font-size: 2.6vmin;
+}
+
+.intro
+{
+  color: #0098BE;
+  font-size: 3vmin;
+  margin-left: 30px;
+  margin-top: 25px;
+  
+}
+
+.main-cont
+{
+  
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 75px 0 0 0;
+}
+
+
+
+.cont-pic
+{
+  background-image: url('../../../assets/images/user-pic.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  position: relative;
+  left: 35px;
+  margin-top:-78px;
+  border: 2px solid #ffffff;
+  min-width: 90px;
+  min-height: 90px;
+  width: 15vmin;
+  height: 15vmin;
+  transform: translateY(-50%);
+}
+
+.posts
+{
+  margin: 0 5vw;
+  margin-top: 20px;
+  margin-top: max(40px, 4vmin);
+  min-height: 60vh;
+}
+
+.post
+{
+  padding: 10px;
+}
+
+.swiper {
+  width: 100%;
+  padding-bottom: 45px;
+  margin-top: -55px;
+}
